@@ -3,14 +3,14 @@ Host your own website on the TOR network
 You have to make some changes to make this work.
 1. Edit the /etc/tor/torrc file.
 In this file you must comment out two lines
-############### This section is just for location-hidden services ###
-
--## Once you have configured a hidden service, you can look at the
--## contents of the file ".../hidden_service/hostname" for the address
--## to tell people.
--##
--## HiddenServicePort x y:z says to redirect requests on port x to the
--## address y:z.
+~############### This section is just for location-hidden services ###
+~
+~## Once you have configured a hidden service, you can look at the
+~## contents of the file ".../hidden_service/hostname" for the address
+~## to tell people.
+~##
+~## HiddenServicePort x y:z says to redirect requests on port x to the
+~## address y:z.
 
 #HiddenServiceDir /var/lib/tor/hidden_service/
 #HiddenServicePort 80 127.0.0.1:8080
