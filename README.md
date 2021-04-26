@@ -24,5 +24,6 @@ Second. Change form prot 80 to port 8080 in 127.0.0.1:80 (so from 127.0.0.1:80 y
 2. Now you have to edit the index.html file located in the TOR-website folder. (thats the  folder you downloaded from github)
 You have to write your own website in HTML or you can just find a website you like, right-click and click 'View Page Source' and that will take you to the source code of the website. Copy all that and paste it in the index.html file.
 
-
 After that, you are ready, launch the server_run.sh file and browse to your website. (The domain name is in /var/lib/hidden_service/hostname).
+
+Note, if you want to make it run in the background, just add a & sign at the end of the python command.
