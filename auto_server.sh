@@ -7,7 +7,7 @@ clear
 echo "$(tput setaf 2) This tool was made by scorp1on-0$(tput setaf 0))$(tput sgr 0)"
 echo " "
 echo "$(tput setaf 1)DISCLAMER: I AM NOT RESPONSABLE FOR WHAT YOU DO WITH THIS TOOL. PLEASE DO NOT USE IT IN ILEGAL PURPOSE.$(tput sgr 0)"
-sleep 2
+sleep 0.4
 #Now starting
 echo "Now starting service..."
 echo "Stand by"
@@ -28,7 +28,7 @@ clear
 #Printing the domain name
 clear
 echo "$(tput setaf 0)To stop the server, hit CTRL + C"
-sleep 2
+sleep 0.1
 #Starting python3 in the background
 python3 -m http.server --bind 127.0.0.1 8080 &
 clear
@@ -39,13 +39,14 @@ echo "| HOSTNAME |--------------------------------------------------------------
 clear
 sleep 2
 clear
-echo "$(tput sgt 1)$(tput setaf 3) I have done almost all the work, all you need to do now is copy this link:"
-echo " "
+echo "$(tput sgr 0) I have done almost all the work, all you need to do now is"
+echo "$(tput setaf 2)copy this link:"
 sleep 1
+echo "|----------------------------------------------------------|"
 sudo cat /var/lib/tor/hidden_service/hostname
-echo " "
+echo "|----------------------------------------------------------|"
 sleep 1
-echo "And paste it in your browser. And that's it. You just went to your own website on the TOR network."
+echo "And paste it in your browser.$(tput sgr 0) And that's it. You just went to your own website on the TOR network."
 echo " "
 sleep 3
 echo "If you are not sure of something, read the README.md file again. (read it in the terminal not github) And if that does not answer your question, feel free to leave a comment on Github"
