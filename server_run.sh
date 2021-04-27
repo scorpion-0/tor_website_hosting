@@ -12,7 +12,7 @@ echo "$(tput sgr 1)$(tput setaf 2) This tool was made by scorp1on-0$(tput setaf 
 echo " "
 sleep 2
 sudo echo "Checking..."
-echo "$(tput setaf 1)DISCLAMER: I AM NOT RESPONSABLE FOR WHAT YOU DO WITH THIS TOOL. PLEASE DO NOT USE IT IN ILEGAL PURPOSE.$(tput sgr 0)"
+echo "$(tput sgr 1)$(tput setaf 1)DISCLAMER: I AM NOT RESPONSABLE FOR WHAT YOU DO WITH THIS TOOL. PLEASE DO NOT USE IT IN ILEGAL PURPOSE.$(tput sgr 0)"
 sleep 2
 #Now starting
 echo "Now starting service..."
@@ -27,32 +27,25 @@ sleep 0.2
 echo "Tor will run in the background"
 #Starting tor in the background
 sleep 0.2
-echo "$(tput setaf 0) Tor is starting..."
+echo "$(tput sgr 0) Tor is starting..."
 sudo tor &
-echo "Tor started, moving on"
-#Printing the domain name
-sleep 0.2
-echo "$(tput setaf 2)==================================================================="
-echo "This is the hostname of your .onion website: (NOTE: The hostname can change after you restart the service, it is located in /var/lib/hidden_service/hostname)$(tput sgr 1) "
-echo "| HOSTNAME |----------------------------------------------------------------------|"
-sudo cat /var/lib/tor/hidden_service/hostname
-echo "| HOSTNAME |----------------------------------------------------------------------|"
+echo "Tor started, moving on..."
+#Printing the domain name"
 sleep 1
-echo "$(tput sgr 0)==================================================================="
-sleep 0.2
-echo "$(tput sgr 1)THIS IS THE HOSTNAME, paste this in the Tor Browser$(tput sgr 0)"
 echo "Starting python server..."
 sleep 0.2
-
-echo "$(tput setaf 0)To stop the server, hit CTRL + C"
+echo "$(tput sgr 0)To stop the server, hit CTRL + C"
 sleep 2
 #Starting python3 in the background
 python3 -m http.server --bind 127.0.0.1 8080 &
 sleep 0.2
 echo "Python3 is now running in the background$(tput setaf 2)"
 sleep 0.2
-#You are done here 
+#You are done here
 echo "|-------------------------------------------|"
 echo "Your site is up and running!"
 echo "To stop the service, run the stop.sh file"
 sleep 0.5
+echo "| HOSTNAME |----------------------------------------------------------------------|$(tput sgr 1)"
+sudo cat /var/lib/tor/hidden_service/hostname
+echo "$(tput sgr 0)$(tput setaf 2)| HOSTNAME |----------------------------------------------------------------------|"
