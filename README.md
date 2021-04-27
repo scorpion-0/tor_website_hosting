@@ -1,6 +1,12 @@
 # TOR-website
 Host your own website on the TOR network
-You have to make some changes to make this work.
+
+All you need is a server or your own computer.
+
+Now you can host your own website on tor for FREE.
+
+
+You have to make 2 changes to make this work.
 1. Edit the /etc/tor/torrc file.
 In this file you must comment out two lines
 1.############### This section is just for location-hidden services ###
@@ -26,4 +32,4 @@ You have to write your own website in HTML or you can just find a website you li
 
 After that, you are ready, launch the server_run.sh file and browse to your website. (The domain name is in /var/lib/hidden_service/hostname).
 
-Note, if you want to make it run in the background, just add a & sign at the end of the python command.
+DISCLAMER: I AM NOT RESPONSABLE FOR WHAT YOU DO WITH THIS TOOL.
