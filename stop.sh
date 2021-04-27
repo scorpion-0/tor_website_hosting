@@ -1,6 +1,6 @@
 echo "Printing procceses..."
 echo "$(tput sgr 1) User assistance required$(tput sgr 0)"
-bg
+jobs
 echo Please enter the number of the job with python3:
 read python3
 sudo kill $python3
