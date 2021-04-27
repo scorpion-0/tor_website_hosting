@@ -6,6 +6,8 @@ All you need is a server or your own computer.
 Now you can host your own website on tor for FREE.
 
 
+Dont read this on Github btw cause it looks a little not right. Read it in your terminal.
+
 You have to make 2 changes to make this work.
 1. Edit the /etc/tor/torrc file.
 In this file you must comment out two lines
