@@ -32,6 +32,6 @@ echo "To stop the server, hit CTRL + C"
 #Starting python3 in the background
 python3 -m http.server --bind 127.0.0.1 8080 &
 echo "Python3 is now running in the background"
-#You are done here
+#You are done here 
 echo "Your site is up and running!"
 echo "To stop the service, run the stop.sh file"
